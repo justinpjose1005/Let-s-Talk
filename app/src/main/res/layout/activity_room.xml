@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RoomActivity">
+
+    <TextView
+        android:id="@+id/room_screen_users_online"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:background="#eee"
+        android:padding="4dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/msg_field1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/recycler_view1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/box"
+        android:padding="5dp"
+        android:text="Empty Chat"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/room_screen_users_online"
+        android:layout_above="@id/msg_field2"
+        android:saveEnabled="true"
+        android:scrollbars="vertical" />
+
+    <TextView
+        android:id="@+id/msg_field2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/recycler_view2"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/box"
+        android:padding="5dp"
+        android:text="Empty Chat"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/textInputLayout"
+        android:saveEnabled="true"
+        android:scrollbars="vertical"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/black" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:focusable="false"
+        android:src="@drawable/send_icon"
+        android:tint="@android:color/white"
+        app:fabSize="mini" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@id/fab">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</RelativeLayout>

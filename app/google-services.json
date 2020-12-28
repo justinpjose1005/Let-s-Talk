@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "70105718180",
+    "firebase_url": "https://chat-room-b6349-default-rtdb.firebaseio.com",
+    "project_id": "chat-room-b6349",
+    "storage_bucket": "chat-room-b6349.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70105718180:android:3d739e334840cb92133531",
+        "android_client_info": {
+          "package_name": "com.justinpjose.chatroom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70105718180-rg8hb87c1na0rr1hov1jb8f34ofusgk1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChVYNHYwQvkbCT0o-SxyqcPXpSHJ0EqxI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70105718180-rg8hb87c1na0rr1hov1jb8f34ofusgk1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
